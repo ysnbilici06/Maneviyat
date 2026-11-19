@@ -1,0 +1,1142 @@
+[
+{
+"no": 1,
+"ad": "Fâtiha",
+"ar": "سُورَةُ ٱلْفَاتِحَةِ",
+"anlam": "The Opening",
+"ayet": 7,
+"inis": "Mekkî",
+"sayfa": 1,
+"cuz": 1
+},
+{
+"no": 2,
+"ad": "Bakara",
+"ar": "سُورَةُ البَقَرَةِ",
+"anlam": "The Cow",
+"ayet": 286,
+"inis": "Medenî",
+"sayfa": 2,
+"cuz": 1
+},
+{
+"no": 3,
+"ad": "Âl-i İmrân",
+"ar": "سُورَةُ آلِ عِمۡرَانَ",
+"anlam": "The Family of Imraan",
+"ayet": 200,
+"inis": "Medenî",
+"sayfa": 50,
+"cuz": 3
+},
+{
+"no": 4,
+"ad": "Nisâ",
+"ar": "سُورَةُ النِّسَاءِ",
+"anlam": "The Women",
+"ayet": 176,
+"inis": "Medenî",
+"sayfa": 77,
+"cuz": 4
+},
+{
+"no": 5,
+"ad": "Mâide",
+"ar": "سُورَةُ المَائـِدَةِ",
+"anlam": "The Table",
+"ayet": 120,
+"inis": "Medenî",
+"sayfa": 106,
+"cuz": 6
+},
+{
+"no": 6,
+"ad": "En'âm",
+"ar": "سُورَةُ الأَنۡعَامِ",
+"anlam": "The Cattle",
+"ayet": 165,
+"inis": "Mekkî",
+"sayfa": 128,
+"cuz": 7
+},
+{
+"no": 7,
+"ad": "A'râf",
+"ar": "سُورَةُ الأَعۡرَافِ",
+"anlam": "The Heights",
+"ayet": 206,
+"inis": "Mekkî",
+"sayfa": 151,
+"cuz": 8
+},
+{
+"no": 8,
+"ad": "Enfâl",
+"ar": "سُورَةُ الأَنفَالِ",
+"anlam": "The Spoils of War",
+"ayet": 75,
+"inis": "Medenî",
+"sayfa": 177,
+"cuz": 9
+},
+{
+"no": 9,
+"ad": "Tevbe",
+"ar": "سُورَةُ التَّوۡبَةِ",
+"anlam": "The Repentance",
+"ayet": 129,
+"inis": "Medenî",
+"sayfa": 187,
+"cuz": 10
+},
+{
+"no": 10,
+"ad": "Yûnus",
+"ar": "سُورَةُ يُونُسَ",
+"anlam": "Jonas",
+"ayet": 109,
+"inis": "Mekkî",
+"sayfa": 208,
+"cuz": 11
+},
+{
+"no": 11,
+"ad": "Hûd",
+"ar": "سُورَةُ هُودٍ",
+"anlam": "Hud",
+"ayet": 123,
+"inis": "Mekkî",
+"sayfa": 221,
+"cuz": 11
+},
+{
+"no": 12,
+"ad": "Yûsuf",
+"ar": "سُورَةُ يُوسُفَ",
+"anlam": "Joseph",
+"ayet": 111,
+"inis": "Mekkî",
+"sayfa": 235,
+"cuz": 12
+},
+{
+"no": 13,
+"ad": "Ra'd",
+"ar": "سُورَةُ الرَّعۡدِ",
+"anlam": "The Thunder",
+"ayet": 43,
+"inis": "Medenî",
+"sayfa": 249,
+"cuz": 13
+},
+{
+"no": 14,
+"ad": "İbrâhîm",
+"ar": "سُورَةُ إِبۡرَاهِيمَ",
+"anlam": "Abraham",
+"ayet": 52,
+"inis": "Mekkî",
+"sayfa": 255,
+"cuz": 13
+},
+{
+"no": 15,
+"ad": "Hicr",
+"ar": "سُورَةُ الحِجۡرِ",
+"anlam": "The Rock",
+"ayet": 99,
+"inis": "Mekkî",
+"sayfa": 262,
+"cuz": 14
+},
+{
+"no": 16,
+"ad": "Nahl",
+"ar": "سُورَةُ النَّحۡلِ",
+"anlam": "The Bee",
+"ayet": 128,
+"inis": "Mekkî",
+"sayfa": 267,
+"cuz": 14
+},
+{
+"no": 17,
+"ad": "İsrâ",
+"ar": "سُورَةُ الإِسۡرَاءِ",
+"anlam": "The Night Journey",
+"ayet": 111,
+"inis": "Mekkî",
+"sayfa": 282,
+"cuz": 15
+},
+{
+"no": 18,
+"ad": "Kehf",
+"ar": "سُورَةُ الكَهۡفِ",
+"anlam": "The Cave",
+"ayet": 110,
+"inis": "Mekkî",
+"sayfa": 293,
+"cuz": 15
+},
+{
+"no": 19,
+"ad": "Meryem",
+"ar": "سُورَةُ مَرۡيَمَ",
+"anlam": "Mary",
+"ayet": 98,
+"inis": "Mekkî",
+"sayfa": 305,
+"cuz": 16
+},
+{
+"no": 20,
+"ad": "Tâhâ",
+"ar": "سُورَةُ طه",
+"anlam": "Taa-Haa",
+"ayet": 135,
+"inis": "Mekkî",
+"sayfa": 312,
+"cuz": 16
+},
+{
+"no": 21,
+"ad": "Enbiyâ",
+"ar": "سُورَةُ الأَنبِيَاءِ",
+"anlam": "The Prophets",
+"ayet": 112,
+"inis": "Mekkî",
+"sayfa": 322,
+"cuz": 17
+},
+{
+"no": 22,
+"ad": "Hac",
+"ar": "سُورَةُ الحَجِّ",
+"anlam": "The Pilgrimage",
+"ayet": 78,
+"inis": "Medenî",
+"sayfa": 332,
+"cuz": 17
+},
+{
+"no": 23,
+"ad": "Mü'minûn",
+"ar": "سُورَةُ المُؤۡمِنُونَ",
+"anlam": "The Believers",
+"ayet": 118,
+"inis": "Mekkî",
+"sayfa": 342,
+"cuz": 18
+},
+{
+"no": 24,
+"ad": "Nûr",
+"ar": "سُورَةُ النُّورِ",
+"anlam": "The Light",
+"ayet": 64,
+"inis": "Medenî",
+"sayfa": 350,
+"cuz": 18
+},
+{
+"no": 25,
+"ad": "Furkân",
+"ar": "سُورَةُ الفُرۡقَانِ",
+"anlam": "The Criterion",
+"ayet": 77,
+"inis": "Mekkî",
+"sayfa": 359,
+"cuz": 18
+},
+{
+"no": 26,
+"ad": "Şuarâ",
+"ar": "سُورَةُ الشُّعَرَاءِ",
+"anlam": "The Poets",
+"ayet": 227,
+"inis": "Mekkî",
+"sayfa": 367,
+"cuz": 19
+},
+{
+"no": 27,
+"ad": "Neml",
+"ar": "سُورَةُ النَّمۡلِ",
+"anlam": "The Ant",
+"ayet": 93,
+"inis": "Mekkî",
+"sayfa": 377,
+"cuz": 19
+},
+{
+"no": 28,
+"ad": "Kasas",
+"ar": "سُورَةُ القَصَصِ",
+"anlam": "The Stories",
+"ayet": 88,
+"inis": "Mekkî",
+"sayfa": 385,
+"cuz": 20
+},
+{
+"no": 29,
+"ad": "Ankebût",
+"ar": "سُورَةُ العَنكَبُوتِ",
+"anlam": "The Spider",
+"ayet": 69,
+"inis": "Mekkî",
+"sayfa": 396,
+"cuz": 20
+},
+{
+"no": 30,
+"ad": "Rûm",
+"ar": "سُورَةُ الرُّومِ",
+"anlam": "The Romans",
+"ayet": 60,
+"inis": "Mekkî",
+"sayfa": 404,
+"cuz": 21
+},
+{
+"no": 31,
+"ad": "Lokmân",
+"ar": "سُورَةُ لُقۡمَانَ",
+"anlam": "Luqman",
+"ayet": 34,
+"inis": "Mekkî",
+"sayfa": 411,
+"cuz": 21
+},
+{
+"no": 32,
+"ad": "Secde",
+"ar": "سُورَةُ السَّجۡدَةِ",
+"anlam": "The Prostration",
+"ayet": 30,
+"inis": "Mekkî",
+"sayfa": 415,
+"cuz": 21
+},
+{
+"no": 33,
+"ad": "Ahzâb",
+"ar": "سُورَةُ الأَحۡزَابِ",
+"anlam": "The Clans",
+"ayet": 73,
+"inis": "Medenî",
+"sayfa": 418,
+"cuz": 21
+},
+{
+"no": 34,
+"ad": "Sebe'",
+"ar": "سُورَةُ سَبَإٍ",
+"anlam": "Sheba",
+"ayet": 54,
+"inis": "Mekkî",
+"sayfa": 428,
+"cuz": 22
+},
+{
+"no": 35,
+"ad": "Fâtır",
+"ar": "سُورَةُ فَاطِرٍ",
+"anlam": "The Originator",
+"ayet": 45,
+"inis": "Mekkî",
+"sayfa": 434,
+"cuz": 22
+},
+{
+"no": 36,
+"ad": "Yâsîn",
+"ar": "سُورَةُ يسٓ",
+"anlam": "Yaseen",
+"ayet": 83,
+"inis": "Mekkî",
+"sayfa": 440,
+"cuz": 22
+},
+{
+"no": 37,
+"ad": "Sâffât",
+"ar": "سُورَةُ الصَّافَّاتِ",
+"anlam": "Those drawn up in Ranks",
+"ayet": 182,
+"inis": "Mekkî",
+"sayfa": 446,
+"cuz": 23
+},
+{
+"no": 38,
+"ad": "Sâd",
+"ar": "سُورَةُ صٓ",
+"anlam": "The letter Saad",
+"ayet": 88,
+"inis": "Mekkî",
+"sayfa": 453,
+"cuz": 23
+},
+{
+"no": 39,
+"ad": "Zümer",
+"ar": "سُورَةُ الزُّمَرِ",
+"anlam": "The Groups",
+"ayet": 75,
+"inis": "Mekkî",
+"sayfa": 458,
+"cuz": 23
+},
+{
+"no": 40,
+"ad": "Mü'min",
+"ar": "سُورَةُ غَافِرٍ",
+"anlam": "The Forgiver",
+"ayet": 85,
+"inis": "Mekkî",
+"sayfa": 467,
+"cuz": 24
+},
+{
+"no": 41,
+"ad": "Fussilet",
+"ar": "سُورَةُ فُصِّلَتۡ",
+"anlam": "Explained in detail",
+"ayet": 54,
+"inis": "Mekkî",
+"sayfa": 477,
+"cuz": 24
+},
+{
+"no": 42,
+"ad": "Şûrâ",
+"ar": "سُورَةُ الشُّورَىٰ",
+"anlam": "Consultation",
+"ayet": 53,
+"inis": "Mekkî",
+"sayfa": 483,
+"cuz": 25
+},
+{
+"no": 43,
+"ad": "Zuhruf",
+"ar": "سُورَةُ الزُّخۡرُفِ",
+"anlam": "Ornaments of gold",
+"ayet": 89,
+"inis": "Mekkî",
+"sayfa": 489,
+"cuz": 25
+},
+{
+"no": 44,
+"ad": "Duhân",
+"ar": "سُورَةُ الدُّخَانِ",
+"anlam": "The Smoke",
+"ayet": 59,
+"inis": "Mekkî",
+"sayfa": 496,
+"cuz": 25
+},
+{
+"no": 45,
+"ad": "Câsiye",
+"ar": "سُورَةُ الجَاثِيَةِ",
+"anlam": "Crouching",
+"ayet": 37,
+"inis": "Mekkî",
+"sayfa": 499,
+"cuz": 25
+},
+{
+"no": 46,
+"ad": "Ahkâf",
+"ar": "سُورَةُ الأَحۡقَافِ",
+"anlam": "The Dunes",
+"ayet": 35,
+"inis": "Mekkî",
+"sayfa": 502,
+"cuz": 26
+},
+{
+"no": 47,
+"ad": "Muhammed",
+"ar": "سُورَةُ مُحَمَّدٍ",
+"anlam": "Muhammad",
+"ayet": 38,
+"inis": "Medenî",
+"sayfa": 507,
+"cuz": 26
+},
+{
+"no": 48,
+"ad": "Fetih",
+"ar": "سُورَةُ الفَتۡحِ",
+"anlam": "The Victory",
+"ayet": 29,
+"inis": "Medenî",
+"sayfa": 511,
+"cuz": 26
+},
+{
+"no": 49,
+"ad": "Hucurât",
+"ar": "سُورَةُ الحُجُرَاتِ",
+"anlam": "The Inner Apartments",
+"ayet": 18,
+"inis": "Medenî",
+"sayfa": 515,
+"cuz": 26
+},
+{
+"no": 50,
+"ad": "Kâf",
+"ar": "سُورَةُ قٓ",
+"anlam": "The letter Qaaf",
+"ayet": 45,
+"inis": "Mekkî",
+"sayfa": 518,
+"cuz": 26
+},
+{
+"no": 51,
+"ad": "Zâriyât",
+"ar": "سُورَةُ الذَّارِيَاتِ",
+"anlam": "The Winnowing Winds",
+"ayet": 60,
+"inis": "Mekkî",
+"sayfa": 520,
+"cuz": 26
+},
+{
+"no": 52,
+"ad": "Tûr",
+"ar": "سُورَةُ الطُّورِ",
+"anlam": "The Mount",
+"ayet": 49,
+"inis": "Mekkî",
+"sayfa": 523,
+"cuz": 27
+},
+{
+"no": 53,
+"ad": "Necm",
+"ar": "سُورَةُ النَّجۡمِ",
+"anlam": "The Star",
+"ayet": 62,
+"inis": "Mekkî",
+"sayfa": 526,
+"cuz": 27
+},
+{
+"no": 54,
+"ad": "Kamer",
+"ar": "سُورَةُ القَمَرِ",
+"anlam": "The Moon",
+"ayet": 55,
+"inis": "Mekkî",
+"sayfa": 528,
+"cuz": 27
+},
+{
+"no": 55,
+"ad": "Rahmân",
+"ar": "سُورَةُ الرَّحۡمَٰن",
+"anlam": "The Beneficent",
+"ayet": 78,
+"inis": "Medenî",
+"sayfa": 531,
+"cuz": 27
+},
+{
+"no": 56,
+"ad": "Vâkıa",
+"ar": "سُورَةُ الوَاقِعَةِ",
+"anlam": "The Inevitable",
+"ayet": 96,
+"inis": "Mekkî",
+"sayfa": 534,
+"cuz": 27
+},
+{
+"no": 57,
+"ad": "Hadîd",
+"ar": "سُورَةُ الحَدِيدِ",
+"anlam": "The Iron",
+"ayet": 29,
+"inis": "Medenî",
+"sayfa": 537,
+"cuz": 27
+},
+{
+"no": 58,
+"ad": "Mücâdele",
+"ar": "سُورَةُ المُجَادلَةِ",
+"anlam": "The Pleading Woman",
+"ayet": 22,
+"inis": "Medenî",
+"sayfa": 542,
+"cuz": 28
+},
+{
+"no": 59,
+"ad": "Haşr",
+"ar": "سُورَةُ الحَشۡرِ",
+"anlam": "The Exile",
+"ayet": 24,
+"inis": "Medenî",
+"sayfa": 545,
+"cuz": 28
+},
+{
+"no": 60,
+"ad": "Mümtehine",
+"ar": "سُورَةُ المُمۡتَحنَةِ",
+"anlam": "She that is to be examined",
+"ayet": 13,
+"inis": "Medenî",
+"sayfa": 549,
+"cuz": 28
+},
+{
+"no": 61,
+"ad": "Saf",
+"ar": "سُورَةُ الصَّفِّ",
+"anlam": "The Ranks",
+"ayet": 14,
+"inis": "Medenî",
+"sayfa": 551,
+"cuz": 28
+},
+{
+"no": 62,
+"ad": "Cuma",
+"ar": "سُورَةُ الجُمُعَةِ",
+"anlam": "Friday",
+"ayet": 11,
+"inis": "Medenî",
+"sayfa": 553,
+"cuz": 28
+},
+{
+"no": 63,
+"ad": "Münâfikûn",
+"ar": "سُورَةُ المُنَافِقُونَ",
+"anlam": "The Hypocrites",
+"ayet": 11,
+"inis": "Medenî",
+"sayfa": 554,
+"cuz": 28
+},
+{
+"no": 64,
+"ad": "Teğâbün",
+"ar": "سُورَةُ التَّغَابُنِ",
+"anlam": "Mutual Disillusion",
+"ayet": 18,
+"inis": "Medenî",
+"sayfa": 556,
+"cuz": 28
+},
+{
+"no": 65,
+"ad": "Talâk",
+"ar": "سُورَةُ الطَّلَاقِ",
+"anlam": "Divorce",
+"ayet": 12,
+"inis": "Medenî",
+"sayfa": 558,
+"cuz": 28
+},
+{
+"no": 66,
+"ad": "Tahrîm",
+"ar": "سُورَةُ التَّحۡرِيمِ",
+"anlam": "The Prohibition",
+"ayet": 12,
+"inis": "Medenî",
+"sayfa": 560,
+"cuz": 28
+},
+{
+"no": 67,
+"ad": "Mülk",
+"ar": "سُورَةُ المُلۡكِ",
+"anlam": "The Sovereignty",
+"ayet": 30,
+"inis": "Mekkî",
+"sayfa": 562,
+"cuz": 29
+},
+{
+"no": 68,
+"ad": "Kalem",
+"ar": "سُورَةُ القَلَمِ",
+"anlam": "The Pen",
+"ayet": 52,
+"inis": "Mekkî",
+"sayfa": 564,
+"cuz": 29
+},
+{
+"no": 69,
+"ad": "Hâkka",
+"ar": "سُورَةُ الحَاقَّةِ",
+"anlam": "The Reality",
+"ayet": 52,
+"inis": "Mekkî",
+"sayfa": 566,
+"cuz": 29
+},
+{
+"no": 70,
+"ad": "Meâric",
+"ar": "سُورَةُ المَعَارِجِ",
+"anlam": "The Ascending Stairways",
+"ayet": 44,
+"inis": "Mekkî",
+"sayfa": 568,
+"cuz": 29
+},
+{
+"no": 71,
+"ad": "Nûh",
+"ar": "سُورَةُ نُوحٍ",
+"anlam": "Noah",
+"ayet": 28,
+"inis": "Mekkî",
+"sayfa": 570,
+"cuz": 29
+},
+{
+"no": 72,
+"ad": "Cin",
+"ar": "سُورَةُ الجِنِّ",
+"anlam": "The Jinn",
+"ayet": 28,
+"inis": "Mekkî",
+"sayfa": 572,
+"cuz": 29
+},
+{
+"no": 73,
+"ad": "Müzzemmil",
+"ar": "سُورَةُ المُزَّمِّلِ",
+"anlam": "The Enshrouded One",
+"ayet": 20,
+"inis": "Mekkî",
+"sayfa": 574,
+"cuz": 29
+},
+{
+"no": 74,
+"ad": "Müddessir",
+"ar": "سُورَةُ المُدَّثِّرِ",
+"anlam": "The Cloaked One",
+"ayet": 56,
+"inis": "Mekkî",
+"sayfa": 575,
+"cuz": 29
+},
+{
+"no": 75,
+"ad": "Kıyâme",
+"ar": "سُورَةُ القِيَامَةِ",
+"anlam": "The Resurrection",
+"ayet": 40,
+"inis": "Mekkî",
+"sayfa": 577,
+"cuz": 29
+},
+{
+"no": 76,
+"ad": "İnsân",
+"ar": "سُورَةُ الإِنسَانِ",
+"anlam": "Man",
+"ayet": 31,
+"inis": "Medenî",
+"sayfa": 578,
+"cuz": 29
+},
+{
+"no": 77,
+"ad": "Mürselât",
+"ar": "سُورَةُ المُرۡسَلَاتِ",
+"anlam": "The Emissaries",
+"ayet": 50,
+"inis": "Mekkî",
+"sayfa": 580,
+"cuz": 29
+},
+{
+"no": 78,
+"ad": "Nebe'",
+"ar": "سُورَةُ النَّبَإِ",
+"anlam": "The Announcement",
+"ayet": 40,
+"inis": "Mekkî",
+"sayfa": 582,
+"cuz": 30
+},
+{
+"no": 79,
+"ad": "Nâziât",
+"ar": "سُورَةُ النَّازِعَاتِ",
+"anlam": "Those who drag forth",
+"ayet": 46,
+"inis": "Mekkî",
+"sayfa": 583,
+"cuz": 30
+},
+{
+"no": 80,
+"ad": "Abese",
+"ar": "سُورَةُ عَبَسَ",
+"anlam": "He frowned",
+"ayet": 42,
+"inis": "Mekkî",
+"sayfa": 585,
+"cuz": 30
+},
+{
+"no": 81,
+"ad": "Tekvîr",
+"ar": "سُورَةُ التَّكۡوِيرِ",
+"anlam": "The Overthrowing",
+"ayet": 29,
+"inis": "Mekkî",
+"sayfa": 586,
+"cuz": 30
+},
+{
+"no": 82,
+"ad": "İnfitâr",
+"ar": "سُورَةُ الانفِطَارِ",
+"anlam": "The Cleaving",
+"ayet": 19,
+"inis": "Mekkî",
+"sayfa": 587,
+"cuz": 30
+},
+{
+"no": 83,
+"ad": "Mutaffifîn",
+"ar": "سُورَةُ المُطَفِّفِينَ",
+"anlam": "Defrauding",
+"ayet": 36,
+"inis": "Mekkî",
+"sayfa": 587,
+"cuz": 30
+},
+{
+"no": 84,
+"ad": "İnşikâk",
+"ar": "سُورَةُ الانشِقَاقِ",
+"anlam": "The Splitting Open",
+"ayet": 25,
+"inis": "Mekkî",
+"sayfa": 589,
+"cuz": 30
+},
+{
+"no": 85,
+"ad": "Bürûc",
+"ar": "سُورَةُ البُرُوجِ",
+"anlam": "The Constellations",
+"ayet": 22,
+"inis": "Mekkî",
+"sayfa": 590,
+"cuz": 30
+},
+{
+"no": 86,
+"ad": "Târık",
+"ar": "سُورَةُ الطَّارِقِ",
+"anlam": "The Morning Star",
+"ayet": 17,
+"inis": "Mekkî",
+"sayfa": 591,
+"cuz": 30
+},
+{
+"no": 87,
+"ad": "A'lâ",
+"ar": "سُورَةُ الأَعۡلَىٰ",
+"anlam": "The Most High",
+"ayet": 19,
+"inis": "Mekkî",
+"sayfa": 591,
+"cuz": 30
+},
+{
+"no": 88,
+"ad": "Gâşiye",
+"ar": "سُورَةُ الغَاشِيَةِ",
+"anlam": "The Overwhelming",
+"ayet": 26,
+"inis": "Mekkî",
+"sayfa": 592,
+"cuz": 30
+},
+{
+"no": 89,
+"ad": "Fecr",
+"ar": "سُورَةُ الفَجۡرِ",
+"anlam": "The Dawn",
+"ayet": 30,
+"inis": "Mekkî",
+"sayfa": 593,
+"cuz": 30
+},
+{
+"no": 90,
+"ad": "Beled",
+"ar": "سُورَةُ البَلَدِ",
+"anlam": "The City",
+"ayet": 20,
+"inis": "Mekkî",
+"sayfa": 594,
+"cuz": 30
+},
+{
+"no": 91,
+"ad": "Şems",
+"ar": "سُورَةُ الشَّمۡسِ",
+"anlam": "The Sun",
+"ayet": 15,
+"inis": "Mekkî",
+"sayfa": 595,
+"cuz": 30
+},
+{
+"no": 92,
+"ad": "Leyl",
+"ar": "سُورَةُ اللَّيۡلِ",
+"anlam": "The Night",
+"ayet": 21,
+"inis": "Mekkî",
+"sayfa": 595,
+"cuz": 30
+},
+{
+"no": 93,
+"ad": "Duhâ",
+"ar": "سُورَةُ الضُّحَىٰ",
+"anlam": "The Morning Hours",
+"ayet": 11,
+"inis": "Mekkî",
+"sayfa": 596,
+"cuz": 30
+},
+{
+"no": 94,
+"ad": "İnşirâh",
+"ar": "سُورَةُ الشَّرۡحِ",
+"anlam": "The Consolation",
+"ayet": 8,
+"inis": "Mekkî",
+"sayfa": 596,
+"cuz": 30
+},
+{
+"no": 95,
+"ad": "Tîn",
+"ar": "سُورَةُ التِّينِ",
+"anlam": "The Fig",
+"ayet": 8,
+"inis": "Mekkî",
+"sayfa": 597,
+"cuz": 30
+},
+{
+"no": 96,
+"ad": "Alak",
+"ar": "سُورَةُ العَلَقِ",
+"anlam": "The Clot",
+"ayet": 19,
+"inis": "Mekkî",
+"sayfa": 597,
+"cuz": 30
+},
+{
+"no": 97,
+"ad": "Kadr",
+"ar": "سُورَةُ القَدۡرِ",
+"anlam": "The Power, Fate",
+"ayet": 5,
+"inis": "Mekkî",
+"sayfa": 598,
+"cuz": 30
+},
+{
+"no": 98,
+"ad": "Beyyine",
+"ar": "سُورَةُ البَيِّنَةِ",
+"anlam": "The Evidence",
+"ayet": 8,
+"inis": "Medenî",
+"sayfa": 598,
+"cuz": 30
+},
+{
+"no": 99,
+"ad": "Zilzâl",
+"ar": "سُورَةُ الزَّلۡزَلَةِ",
+"anlam": "The Earthquake",
+"ayet": 8,
+"inis": "Medenî",
+"sayfa": 599,
+"cuz": 30
+},
+{
+"no": 100,
+"ad": "Âdiyât",
+"ar": "سُورَةُ العَادِيَاتِ",
+"anlam": "The Chargers",
+"ayet": 11,
+"inis": "Mekkî",
+"sayfa": 599,
+"cuz": 30
+},
+{
+"no": 101,
+"ad": "Kâria",
+"ar": "سُورَةُ القَارِعَةِ",
+"anlam": "The Calamity",
+"ayet": 11,
+"inis": "Mekkî",
+"sayfa": 600,
+"cuz": 30
+},
+{
+"no": 102,
+"ad": "Tekâsür",
+"ar": "سُورَةُ التَّكَاثُرِ",
+"anlam": "Competition",
+"ayet": 8,
+"inis": "Mekkî",
+"sayfa": 600,
+"cuz": 30
+},
+{
+"no": 103,
+"ad": "Asr",
+"ar": "سُورَةُ العَصۡرِ",
+"anlam": "The Declining Day, Epoch",
+"ayet": 3,
+"inis": "Mekkî",
+"sayfa": 601,
+"cuz": 30
+},
+{
+"no": 104,
+"ad": "Hümeze",
+"ar": "سُورَةُ الهُمَزَةِ",
+"anlam": "The Traducer",
+"ayet": 9,
+"inis": "Mekkî",
+"sayfa": 601,
+"cuz": 30
+},
+{
+"no": 105,
+"ad": "Fîl",
+"ar": "سُورَةُ الفِيلِ",
+"anlam": "The Elephant",
+"ayet": 5,
+"inis": "Mekkî",
+"sayfa": 601,
+"cuz": 30
+},
+{
+"no": 106,
+"ad": "Kureyş",
+"ar": "سُورَةُ قُرَيۡشٍ",
+"anlam": "Quraysh",
+"ayet": 4,
+"inis": "Mekkî",
+"sayfa": 602,
+"cuz": 30
+},
+{
+"no": 107,
+"ad": "Mâûn",
+"ar": "سُورَةُ المَاعُونِ",
+"anlam": "Almsgiving",
+"ayet": 7,
+"inis": "Mekkî",
+"sayfa": 602,
+"cuz": 30
+},
+{
+"no": 108,
+"ad": "Kevser",
+"ar": "سُورَةُ الكَوۡثَرِ",
+"anlam": "Abundance",
+"ayet": 3,
+"inis": "Mekkî",
+"sayfa": 602,
+"cuz": 30
+},
+{
+"no": 109,
+"ad": "Kâfirûn",
+"ar": "سُورَةُ الكَافِرُونَ",
+"anlam": "The Disbelievers",
+"ayet": 6,
+"inis": "Mekkî",
+"sayfa": 603,
+"cuz": 30
+},
+{
+"no": 110,
+"ad": "Nasr",
+"ar": "سُورَةُ النَّصۡرِ",
+"anlam": "Divine Support",
+"ayet": 3,
+"inis": "Medenî",
+"sayfa": 603,
+"cuz": 30
+},
+{
+"no": 111,
+"ad": "Tebbet",
+"ar": "سُورَةُ المَسَدِ",
+"anlam": "The Palm Fibre",
+"ayet": 5,
+"inis": "Mekkî",
+"sayfa": 603,
+"cuz": 30
+},
+{
+"no": 112,
+"ad": "İhlâs",
+"ar": "سُورَةُ الإِخۡلَاصِ",
+"anlam": "Sincerity",
+"ayet": 4,
+"inis": "Mekkî",
+"sayfa": 604,
+"cuz": 30
+},
+{
+"no": 113,
+"ad": "Felak",
+"ar": "سُورَةُ الفَلَقِ",
+"anlam": "The Dawn",
+"ayet": 5,
+"inis": "Mekkî",
+"sayfa": 604,
+"cuz": 30
+},
+{
+"no": 114,
+"ad": "Nâs",
+"ar": "سُورَةُ النَّاسِ",
+"anlam": "Mankind",
+"ayet": 6,
+"inis": "Mekkî",
+"sayfa": 604,
+"cuz": 30
+}
+]

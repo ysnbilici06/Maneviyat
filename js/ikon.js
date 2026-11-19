@@ -40,6 +40,9 @@ const Y = {
   yukle: '<path d="M12 15V4"/><path d="m7.5 8.5 4.5-4.5 4.5 4.5"/><path d="M5 19.5h14"/>',
   bilgi: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.6v.1"/>',
   ses: '<path d="M4.5 9.5h3.5L13 5v14l-5-4.5H4.5Z"/><path d="M16.5 9a4 4 0 0 1 0 6M19 6.5a7.5 7.5 0 0 1 0 11"/>',
+  sohbet: '<path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.6 18.6Z"/><path d="M9 10.5c.3 1.6 2 3.4 3.8 3.9l1.2-1 1.6.8"/>',
+  kamera: '<rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/>',
+  resim: '<rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 18 5.5-5 4 3.5 2.5-2 4 3.5"/>',
   goz: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/>',
 };
 

@@ -1,12 +1,12 @@
 // Servis çalışanı: uygulama kabuğu önceden önbelleğe alınır, gerisi okundukça (önce önbellek).
 // Sürümü her yayında artır.
-const SURUM = 'maneviyat-9deaf7fc74';
+const SURUM = 'maneviyat-39454b5f15';
 const KURAN_ONBELLEK = 'maneviyat-kuran';   // sûreler: sürüm değişse de silinmez
 const KABUK = [
   './', 'index.html', 'style.css', 'manifest.json',
   'fonts/amiri-quran.woff2', 'fonts/cormorant-latin-600.woff2', 'fonts/cormorant-latin-ext-600.woff2', 'fonts/cormorant-latin-700.woff2', 'fonts/cormorant-latin-ext-700.woff2', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
   'js/app.js', 'js/store.js', 'js/ui.js', 'js/ikon.js', 'js/tarih.js', 'js/vakit.js', 'js/iller.js', 'js/bildirim.js',
-  'js/kuran-veri.js', 'js/gunun-icerigi.js', 'js/oynatici.js', 'js/kilit-tesbih.js',
+  'js/kuran-veri.js', 'js/gunun-icerigi.js', 'js/oynatici.js', 'js/kilit-tesbih.js', 'js/paylas.js', 'js/intro.js', 'js/ekran/begeniler.js', 'data/icerik/intro.js',
   'js/ekran/bugun.js', 'js/ekran/karsilama.js', 'js/ekran/gun.js', 'js/ekran/namaz.js', 'js/ekran/kible.js',
   'js/ekran/kaza.js', 'js/ekran/zikir.js', 'js/ekran/dua.js', 'js/ekran/kissa.js', 'js/ekran/his.js',
   'js/ekran/kuran.js', 'js/ekran/hadis.js', 'js/ekran/ilmihal.js', 'js/ekran/gunluk.js', 'js/ekran/ayarlar.js',

@@ -1,6 +1,7 @@
 // S20 Sure listesi, S21 Sure okuyucu, S22 dinleme
 import { get, set, guncelle } from '../store.js';
-import { ustBaslik, esc, ayetBlok, paylas, tost, pencere } from '../ui.js';
+import { ustBaslik, esc, ayetBlok, tost, pencere } from '../ui.js';
+import { paylasPenceresi } from '../paylas.js';
 import { ikon } from '../ikon.js';
 import { sureler, sure } from '../kuran-veri.js';
 import * as oynatici from '../oynatici.js';
@@ -110,7 +111,7 @@ export async function oku({ el, p, q }) {
       tost(on ? 'Yer imi eklendi' : 'Yer imi kaldırıldı');
     } else if (pa) {
       const a = veri.ayetler.find(x => x.n === Number(pa.dataset.paylas));
-      paylas(`${a.ar}\n\n${a.tr}\n— ${bilgi.ad} ${no}/${a.n}`);
+      paylasPenceresi({ tur: 'ayet', ar: a.ar, tr: a.tr, kaynak: `${bilgi.ad} ${no}/${a.n}`, id: `ayet:${no}:${a.n}`, href: `#/kuran/${no}?ayet=${a.n}` });
     }
   });
 

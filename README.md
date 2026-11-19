@@ -1,4 +1,4 @@
-# Maneviyat
+# Maneviyat Rehberim
 
 Namaz vakitleri, Kur'an-ı Kerîm, zikirmatik, dualar, kıssalar, hadisler ve ilmihal.
 Ücretsiz, reklamsız; internet olmadan da çalışır.

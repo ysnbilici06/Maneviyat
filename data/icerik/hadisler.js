@@ -16,6 +16,10 @@ export const HADISLER = [
   { konu: 'niyet', m: 'Ameller ancak niyetlere göredir. Herkes için yalnızca niyet ettiği şey vardır.', k: 'Buhârî, Müslim' },
   { konu: 'niyet', m: 'Allah sizin dış görünüşünüze ve mallarınıza bakmaz; kalplerinize ve amellerinize bakar.', k: 'Müslim' },
   { konu: 'niyet', m: 'Din samimiyettir (nasihattir).', k: 'Müslim' },
+  { konu: 'zikir', m: 'Allah buyurur: Ben kulumun beni zannettiği gibiyim. Beni andığında onunla beraberim. Bana bir karış yaklaşana ben bir arşın yaklaşırım. Bana yürüyerek gelene ben koşarak gelirim.', k: 'Buhârî, Müslim (kudsî hadis)' },
+  { konu: 'sabir', m: "Güçlü mümin, zayıf müminden daha hayırlı ve Allah'a daha sevimlidir; ama her birinde hayır vardır. Sana fayda verecek şeye sarıl, Allah'tan yardım iste ve asla acze düşme.", k: 'Müslim' },
+  { konu: 'ahlak', m: 'Kim Allah için alçak gönüllü olursa, Allah onu yüceltir.', k: 'Müslim' },
+  { konu: 'ibadet', m: 'Kim bir iyilik yapmaya niyet eder de yapamazsa, Allah onu tam bir iyilik olarak yazar. Yaparsa, on katından yedi yüz katına kadar yazar.', k: 'Buhârî, Müslim' },
 
   { konu: 'ahlak', m: 'Müslüman, elinden ve dilinden diğer Müslümanların güvende olduğu kimsedir.', k: 'Buhârî, Müslim' },
   { konu: 'ahlak', m: 'Allah\'a ve ahiret gününe inanan kimse ya hayır söylesin ya da sussun.', k: 'Buhârî, Müslim' },

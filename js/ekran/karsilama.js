@@ -35,7 +35,7 @@ export default function karsilama({ el }) {
     const adimlar = [
       `<div class="yigin-genis merkez" style="padding-top:8vh">
         <div style="display:grid;place-items:center"><img src="icons/icon.svg" width="96" height="96" alt="" style="border-radius:24px"></div>
-        <div><h1 style="font-size:32px">Maneviyat</h1><p class="soluk" style="margin-top:8px">Namaz vakitleri, Kur'an, zikir ve dualar tek yerde.<br>Ücretsiz, reklamsız; internet olmadan da çalışır.</p></div>
+        <div><h1 style="font-size:32px">Maneviyat Rehberim</h1><p class="soluk" style="margin-top:8px">Namaz vakitleri, Kur'an, zikir ve dualar tek yerde.<br>Ücretsiz, reklamsız; internet olmadan da çalışır.</p></div>
         <div class="alan" style="text-align:left"><label for="ad">Sana nasıl hitap edelim? <span class="soluk">(isteğe bağlı)</span></label>
           <input class="girdi" id="ad" maxlength="30" autocomplete="given-name" value="${esc(get('ayarlar.ad'))}" placeholder="Adın"></div>
         <button class="btn buyuk tam" data-ileri>Başlayalım</button>

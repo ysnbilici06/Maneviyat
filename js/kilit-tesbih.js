@@ -21,7 +21,7 @@ function metaGuncelle() {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: `${bitti ? '✓ ' : ''}${ad} · ${sayi}${hedef ? ' / ' + hedef : ''}`,
       artist: bitti ? 'Hedef tamamlandı — ⏭ ile devam' : '⏭ +1   ·   ⏮ geri al',
-      album: 'Maneviyat · Tesbih',
+      album: 'Maneviyat Rehberim · Tesbih',
       artwork: [{ src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }],
     });
     navigator.mediaSession.playbackState = 'playing';

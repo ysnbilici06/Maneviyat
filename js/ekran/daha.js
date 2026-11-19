@@ -3,8 +3,9 @@ import { ustBaslik } from '../ui.js';
 import { ikon } from '../ikon.js';
 
 const OGELER = [
+  ['Beğendiklerim', 'Kalp ile kaydettiklerin, paylaşmaya hazır', 'kalp', '#/begeniler'],
   ['Dualar', 'Kendi dualarını yaz, dua kütüphanesi', 'el', '#/dua'],
-  ['Nasıl hissediyorsun?', 'Duygularına göre ayetler', 'kalp', '#/his'],
+  ['Nasıl hissediyorsun?', 'Duygularına göre ayetler', 'gunes', '#/his'],
   ['Kıssalar', 'Peygamberlerden ve siyerden hikâyeler', 'yaprak', '#/kissa'],
   ['Hadisler', 'Konularına göre hadis-i şerifler', 'kitap', '#/hadis'],
   ['İlmihal', 'Abdest, namaz, oruç, zekât, hac', 'liste', '#/ilmihal'],

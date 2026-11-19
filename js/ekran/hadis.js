@@ -1,17 +1,16 @@
 // S23 Hadisler
-import { ustBaslik, esc, paylas, bos } from '../ui.js';
+import { ustBaslik, esc, bos } from '../ui.js';
+import { eylemDugmeleri, eylemleriBagla } from '../paylas.js';
 import { ikon } from '../ikon.js';
 import { HADISLER, HADIS_KONULARI } from '../../data/icerik/hadisler.js';
 import { gunNo } from '../tarih.js';
 
+const icerik = h => ({ tur: 'hadis', etiket: 'Hadis-i şerif', baslik: 'Hadis-i şerif', tr: h.m, kaynak: h.k, id: 'hadis:' + h.m.slice(0, 40), href: '#/hadis' });
 const kart = (h, i) => `<article class="kart"><p class="metin-govde">“${esc(h.m)}”</p>
-  <div class="sira-ara" style="margin-top:10px"><span class="kucuk soluk">${esc(h.k)}</span><button class="ikon-btn" data-paylas="${i}" aria-label="Paylaş">${ikon('paylas', 20)}</button></div></article>`;
+  <div class="sira-ara" style="margin-top:10px"><span class="kucuk soluk">${esc(h.k)}</span><span class="ayet-eylem">${eylemDugmeleri(i, icerik(h))}</span></div></article>`;
 
 function paylasDinle(el, liste) {
-  el.addEventListener('click', e => {
-    const b = e.target.closest('[data-paylas]');
-    if (b) { const h = liste[+b.dataset.paylas]; paylas(`“${h.m}”\n— ${h.k}`, 'Hadis-i şerif'); }
-  });
+  eylemleriBagla(el, new Proxy({}, { get: (_, i) => liste[+i] && icerik(liste[+i]) }));
 }
 
 export default function hadisler({ el }) {

@@ -16,6 +16,7 @@ export const VARSAYILAN = {
     tema: 'koyu',            // varsayılan koyu (gece yeşili + altın)
     okuma: { ar: true, ok: true, tr: true, yazi: 1 },
     titresim: true,
+    intro: true,             // her açılışta 5 sn ayet/hadis/dua
   },
   namaz: {},          // 'YYYY-AA-GG': {sabah:1, ...}
   kaza: { borc: { sabah: 0, ogle: 0, ikindi: 0, aksam: 0, yatsi: 0, vitir: 0 }, kilinan: { sabah: 0, ogle: 0, ikindi: 0, aksam: 0, yatsi: 0, vitir: 0 }, hedefGunluk: 1, baslangic: null },
@@ -30,6 +31,7 @@ export const VARSAYILAN = {
   yerImleri: [],      // [{sure, ayet, zaman}]
   gunluk: [],         // [{id, tarih, his, metin}]
   okunanKissa: {},
+  begeniler: [],      // [{id, tur, baslik, ar, tr, kaynak, href, zaman}]
 };
 
 function derinBirlestir(hedef, kaynak) {

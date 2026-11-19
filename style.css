@@ -485,3 +485,64 @@ button.daire { width: 28px; height: 28px; }
 .zikir-dugme .halka-dolu { stroke: var(--gold); }
 .gk-tarih b, .gk-vakitler b, .hg-no { font-variant-numeric: lining-nums tabular-nums; }
 body[data-ekran="bugun"] .ust h1 { font-size: clamp(24px, 7vw, 34px); }
+
+/* ========== Açılış ekranı (intro) ========== */
+.intro {
+  position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; color: #fff;
+  background: radial-gradient(130% 80% at 85% 0%, #22365a 0%, #122036 32%, #0c1a16 68%, #07120e 100%);
+  padding: calc(env(safe-area-inset-top, 0px) + 22px) 24px calc(env(safe-area-inset-bottom, 0px) + 22px);
+  opacity: 0; transition: opacity 350ms var(--ease);
+}
+.intro.gorunur { opacity: 1; }
+.intro.kapaniyor { opacity: 0; }
+body.intro-acik { overflow: hidden; }
+.intro-yildizlar { position: absolute; inset: 0; pointer-events: none; opacity: .8;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 72% 14%, #e3bf76 50%, transparent 51%), radial-gradient(1px 1px at 88% 30%, #fff 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 46% 24%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 8% 44%, #fff 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 92% 52%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 20% 70%, #e3bf76 50%, transparent 51%),
+    radial-gradient(1.3px 1.3px at 64% 82%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 36% 90%, #fff 50%, transparent 51%),
+    radial-gradient(1.4px 1.4px at 80% 92%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 54% 6%, #fff 50%, transparent 51%);
+  animation: parilti 4s ease-in-out infinite alternate; }
+@keyframes parilti { from { opacity: .45; } to { opacity: .9; } }
+.intro-ust { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: #f6e3b4; }
+.intro-ust img { border-radius: 10px; }
+.intro-govde { position: relative; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 14px; max-width: 600px; width: 100%; margin: 0 auto; }
+.intro-govde > * { opacity: 0; transform: translateY(10px); animation: introBelir 700ms var(--ease) forwards; }
+.intro-govde > :nth-child(2) { animation-delay: 120ms; } .intro-govde > :nth-child(3) { animation-delay: 260ms; }
+.intro-govde > :nth-child(4) { animation-delay: 420ms; } .intro-govde > :nth-child(5) { animation-delay: 560ms; }
+@keyframes introBelir { to { opacity: 1; transform: none; } }
+.intro-yuk { color: #e3bf76; animation: parilti 1s ease-in-out infinite alternate !important; opacity: 1 !important; }
+.intro-etiket { font-size: 13px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #e3bf76; }
+.intro-baslik { font-family: var(--font-serif); font-size: 30px; font-weight: 700; color: #f6e3b4; line-height: 1.15; }
+.intro-arapca { font-family: var(--font-arabic); font-size: clamp(24px, 6.5vw, 34px); line-height: 1.9; color: #f6efdc; direction: rtl; }
+.intro-metin { font-family: var(--font-serif); font-weight: 600; font-size: clamp(22px, 5.6vw, 30px); line-height: 1.35; color: #fff; }
+.intro-kaynak { font-size: 14px; color: rgba(227,191,118,.9); }
+.intro-alt { position: relative; display: grid; gap: 14px; max-width: 600px; width: 100%; margin: 0 auto; }
+.intro-cubuk { height: 3px; border-radius: 9px; background: rgba(255,255,255,.12); overflow: hidden; }
+.intro-cubuk i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, #a07a35, #e9c77f); }
+.intro.dolu .intro-cubuk i { animation: introDolum 5s linear forwards; }
+.intro.durdu .intro-cubuk i { animation-play-state: paused; }
+@keyframes introDolum { to { width: 100%; } }
+.intro-dugmeler { display: flex; justify-content: space-between; align-items: center; }
+.intro .btn.ikincil { background: rgba(255,255,255,.1); color: #fff; }
+.intro .btn.hayalet { color: #e9c77f; }
+@media (prefers-reduced-motion: reduce) { .intro-govde > * { opacity: 1; transform: none; } .intro.dolu .intro-cubuk i { width: 100%; } }
+
+/* ========== Paylaşım penceresi ========== */
+.paylas-onizleme { display: grid; place-items: center; min-height: 220px; max-height: 42vh; background: var(--surface-2); border-radius: var(--r-md); padding: 12px; }
+.paylas-onizleme img { max-height: calc(42vh - 24px); max-width: 100%; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.paylas-onizleme img:not([src]) { display: none; }
+.paylas-izgara { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.paylas-btn { display: grid; justify-items: center; gap: 6px; padding: 12px 4px; border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface); color: var(--text); cursor: pointer; font-weight: 650; font-size: 14px; text-align: center; }
+.paylas-btn .ikon { width: 44px; height: 44px; padding: 10px; border-radius: 50%; background: var(--surface-2); color: var(--gold); box-sizing: border-box; }
+.paylas-btn small { display: block; font-weight: 500; font-size: 11.5px; color: var(--text-muted); }
+.paylas-btn.wa .ikon { background: #1fa855; color: #fff; }
+.paylas-btn.ig .ikon { background: linear-gradient(45deg, #f5a623, #e1306c 50%, #833ab4); color: #fff; }
+.paylas-btn:active { transform: scale(.97); }
+.ikon-btn.secili .ikon { fill: currentColor; }
+
+/* Uygulama içi imza (paylaşılanlarda yok) */
+.imza-not { font-family: var(--font-serif); font-style: italic; font-weight: 600; font-size: 17px; color: var(--gold); text-align: center; margin-top: 10px; }
+.intro-imza { font-family: var(--font-serif); font-style: italic; font-weight: 600; font-size: 16px; color: rgba(246,227,180,.8); text-align: center; }

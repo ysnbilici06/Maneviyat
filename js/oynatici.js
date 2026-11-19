@@ -39,7 +39,7 @@ function medyaBilgisi() {
   if (!('mediaSession' in navigator)) return;
   const a = kuyruk[sira];
   try {
-    navigator.mediaSession.metadata = new MediaMetadata({ title: `${sureAdi} · ${a.n}. ayet`, artist: 'Mişâri Râşid el-Afâsî', album: 'Maneviyat', artwork: [{ src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }] });
+    navigator.mediaSession.metadata = new MediaMetadata({ title: `${sureAdi} · ${a.n}. ayet`, artist: 'Mişâri Râşid el-Afâsî', album: 'Maneviyat Rehberim', artwork: [{ src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' }] });
     navigator.mediaSession.setActionHandler('play', () => ses.play());
     navigator.mediaSession.setActionHandler('pause', () => ses.pause());
     navigator.mediaSession.setActionHandler('nexttrack', () => git(sira + 1));

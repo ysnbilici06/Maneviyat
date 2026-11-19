@@ -1,6 +1,7 @@
 // S17 Kıssa kütüphanesi, S06 kıssa okuyucu
 import { get, guncelle } from '../store.js';
-import { ustBaslik, esc, paylas, tost } from '../ui.js';
+import { ustBaslik, esc, tost } from '../ui.js';
+import { eylemDugmeleri, eylemleriBagla } from '../paylas.js';
 import { ikon } from '../ikon.js';
 import { anahtar } from '../tarih.js';
 import { KISSALAR, KISSA_KATEGORILERI } from '../../data/icerik/kissalar.js';
@@ -28,6 +29,7 @@ export function oku({ el, p, q }) {
   const gunluk = q.gun === '1';
   ustBaslik({ baslik: k.baslik, geri: gunluk ? '#/' : '#/kissa' });
   const g = anahtar();
+  const icerik = { tur: 'kissa', baslik: k.baslik, tr: k.ders, uzunMetin: `${k.metin.join('\n\n')}\n\n${k.ders}`, kaynak: k.kaynak, id: 'kissa:' + k.id, href: `#/kissa/${k.id}` };
   const ciz = () => {
     const bitti = gunluk && !!(get('gorev')[g] || {}).kissa;
     el.innerHTML = `<article class="kart">
@@ -35,13 +37,13 @@ export function oku({ el, p, q }) {
       <div class="metin-govde" style="margin-top:12px">${k.metin.map(m => `<p>${esc(m)}</p>`).join('')}</div>
       <div class="kart kart-yumusak" style="margin-top:18px"><b>Bize düşen</b><p style="margin-top:4px">${esc(k.ders)}</p></div>
       <p class="kaynak">Kaynak: ${esc(k.kaynak)}</p></article>
-      <div class="btn-sira"><button class="btn ikincil" data-paylas>${ikon('paylas', 20)} Paylaş</button></div>
+      <div class="btn-sira" style="align-items:center"><span class="ayet-eylem">${eylemDugmeleri('k', icerik)}</span><button class="btn" data-paylas="k">${ikon('paylas', 20)} Paylaş</button></div>
       ${gunluk ? `<button class="btn buyuk tam" style="margin-top:12px" data-tamam ${bitti ? 'disabled' : ''}>${ikon('tik', 20)} ${bitti ? 'Tamamlandı' : 'Okudum'}</button>` : ''}`;
   };
   ciz();
   guncelle(s => { s.okunanKissa[k.id] = 1; });
+  eylemleriBagla(el, { k: icerik });
   el.addEventListener('click', e => {
-    if (e.target.closest('[data-paylas]')) paylas(`${k.baslik}\n\n${k.metin.join('\n\n')}\n\n${k.ders}\n— ${k.kaynak}`);
     if (e.target.closest('[data-tamam]')) {
       guncelle(s => { s.gorev[g] = s.gorev[g] || {}; s.gorev[g].kissa = 1; });
       tost('Allah kabul etsin'); setTimeout(() => { location.hash = '#/'; }, 500);

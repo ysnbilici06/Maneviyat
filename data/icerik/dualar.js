@@ -126,6 +126,18 @@ export const DUALAR = [
   { id: 'sifa-ayet', kat: 'sifa', ad: 'Şifa veren O\'dur', ref: '26:78-80' },
   { id: 'kolaylik', kat: 'sifa', ad: 'Kolaylık müjdesi', ref: '94:5-8' },
   { id: 'hasbunallah-dua', kat: 'sifa', ad: 'Allah bize yeter', ref: '3:173' },
+  { id: 'keder', kat: 'sifa', ad: 'Kederden ve acizlikten sığınma',
+    ar: 'اَللّٰهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْبُخْلِ وَالْجُبْنِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ',
+    ok: "Allâhümme innî eûzü bike mine'l-hemmi ve'l-hazen, ve'l-aczi ve'l-kesel, ve'l-buhli ve'l-cübn, ve dale'i'd-deyni ve ğalebeti'r-ricâl.",
+    tr: "Allah'ım! Kaygıdan ve hüzünden, acizlikten ve tembellikten, cimrilikten ve korkaklıktan, borcun ağırlığından ve insanların baskısından sana sığınırım.",
+    kaynak: 'Buhârî' },
+  { id: 'sebat', kat: 'gunluk', ad: 'Kalbin imanda sebatı için',
+    ar: 'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلٰى دِينِكَ', ok: "Yâ mukallibe'l-kulûb, sebbit kalbî alâ dînik.",
+    tr: 'Ey kalpleri halden hâle çeviren Rabbim! Kalbimi dinin üzere sabit kıl.', kaynak: 'Tirmizî' },
+  { id: 'hidayet', kat: 'gunluk', ad: 'Hidayet, takva ve gönül zenginliği',
+    ar: 'اَللّٰهُمَّ إِنِّي أَسْأَلُكَ الْهُدٰى وَالتُّقٰى وَالْعَفَافَ وَالْغِنٰى', ok: "Allâhümme innî es'elüke'l-hüdâ ve't-tükâ ve'l-afâfe ve'l-ğınâ.",
+    tr: "Allah'ım! Senden hidayet, takva, iffet ve gönül zenginliği isterim.", kaynak: 'Müslim' },
+  { id: 'kolaylik-dua', kat: 'sifa', ad: 'İşlerin kolaylığı için', ref: '20:25-28', kaynak: "Hz. Mûsâ'nın duası" },
 ];
 
 /** Günün duası için havuz (kısa ve her güne uygun olanlar) */

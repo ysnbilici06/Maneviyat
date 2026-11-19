@@ -16,7 +16,7 @@ export function ustBaslik({ baslik = '', alt = '', geri = false, sag = '' } = {}
     : '';
   el.className = 'ust' + (geri ? ' ust-alt' : '');
   el.innerHTML = `${geriHtml}<div class="ust-metin"><h1>${esc(baslik)}</h1>${alt ? `<p>${alt}</p>` : ''}</div><div class="ust-sag">${sag}</div>`;
-  document.title = baslik ? `${baslik} · Maneviyat` : 'Maneviyat';
+  document.title = baslik ? `${baslik} · Maneviyat Rehberim` : 'Maneviyat Rehberim';
 }
 
 let tostZaman = null;
@@ -77,7 +77,7 @@ export function ayetBlok(a, { ref = '', eylemler = '', gizle = {} } = {}) {
   </article>`;
 }
 
-export async function paylas(metin, baslik = 'Maneviyat') {
+export async function paylas(metin, baslik = 'Maneviyat Rehberim') {
   try {
     if (navigator.share) { await navigator.share({ title: baslik, text: metin }); return; }
   } catch (e) { if (e && e.name === 'AbortError') return; }

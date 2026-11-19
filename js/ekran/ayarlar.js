@@ -9,6 +9,7 @@ import { VAKITLER } from '../vakit.js';
 import { tumunuIndir } from '../kuran-veri.js';
 import { gorunumAyarlari } from './kuran.js';
 import { anahtar } from '../tarih.js';
+import { IMZA } from '../paylas.js';
 
 const anahtarHtml = (id, acik, etiket, alt = '') => `<label class="satir" for="${id}"><div class="esnek"><div class="satir-baslik">${etiket}</div>${alt ? `<div class="satir-alt">${alt}</div>` : ''}</div><span class="anahtar"><input type="checkbox" id="${id}" ${acik ? 'checked' : ''}><span></span></span></label>`;
 
@@ -49,6 +50,7 @@ export default function ayarlar({ el }) {
       <div class="liste">
         <div class="satir"><div class="esnek satir-baslik">Tema</div><div class="bolumlu" role="group" aria-label="Tema" style="min-width:220px">${[['otomatik', 'Otomatik'], ['acik', 'Açık'], ['koyu', 'Koyu']].map(([k, ad]) => `<button aria-pressed="${a.tema === k}" data-tema="${k}">${ad}</button>`).join('')}</div></div>
         <button class="satir" style="width:100%;border-left:0;border-right:0;border-top:0;cursor:pointer;text-align:left" data-okuma><div class="esnek"><div class="satir-baslik">Kur'an okuma görünümü</div><div class="satir-alt">Arapça, okunuş, meal, yazı boyutu</div></div>${ikon('ileri')}</button>
+        ${anahtarHtml('intro', a.intro !== false, 'Açılış ekranı', 'Her açılışta 5 saniye ayet, hadis ya da dua')}
         ${anahtarHtml('titresim', a.titresim, 'Titreşim', 'Zikirmatik ve işaretlemelerde')}
       </div>
 
@@ -68,7 +70,8 @@ export default function ayarlar({ el }) {
 
       <div class="bolum-baslik"><h2>Hakkında</h2></div>
       <div class="kart kucuk yigin">
-        <p><b>Maneviyat</b> · sürüm 0.1 · ücretsiz ve reklamsız.</p>
+        <p><b>Maneviyat Rehberim</b> · sürüm 0.2 · ücretsiz ve reklamsız.</p>
+        <p class="imza-not" style="text-align:left">${IMZA}</p>
         <p class="soluk">Arapça metin: Tanzil Projesi (tanzil.net, değiştirilmeden kullanılmıştır). Meal: Diyanet İşleri Başkanlığı. Okunuş: Muhammet Abay. Sesli okuma: Mişâri Râşid el-Afâsî (islamic.network). Arapça yazı tipi: Amiri Quran (SIL Open Font License). Namaz vakitleri cihazda Diyanet yöntemiyle hesaplanır.</p>
         <p class="soluk">Kıssa, dua açıklamaları, hadis ifadeleri ve ilmihal metinleri bu uygulama için hazırlanmıştır.</p>
         <a href="#/tasarim" class="cok-kucuk">Tasarım sistemi</a>
@@ -89,6 +92,7 @@ export default function ayarlar({ el }) {
     } else if (t.id.startsWith('bv-')) { guncelle(s => { s.ayarlar.bildirim.vakitler[t.id.slice(3)] = t.checked; }); bildirimleriPlanla(); }
     else if (t.id === 'dk') { guncelle(s => { s.ayarlar.bildirim.dkOnce = +t.value; }); bildirimleriPlanla(); }
     else if (t.id === 'titresim') set('ayarlar.titresim', t.checked);
+    else if (t.id === 'intro') set('ayarlar.intro', t.checked);
     else if (t.id === 'yedek-dosya' && t.files[0]) {
       try {
         const metin = await t.files[0].text();
@@ -107,7 +111,7 @@ export default function ayarlar({ el }) {
       try { set('ayarlar.konum', await konumAl()); bildirimleriPlanla(); tost('Konum güncellendi'); } catch (err) { tost(err.message); }
       ciz();
     }
-    else if (e.target.closest('[data-dene]')) goster('Maneviyat', 'Hatırlatmalar çalışıyor.', 'deneme');
+    else if (e.target.closest('[data-dene]')) goster('Maneviyat Rehberim', 'Hatırlatmalar çalışıyor.', 'deneme');
     else if (e.target.closest('[data-okuma]')) gorunumAyarlari();
     else if (e.target.closest('[data-indir-kuran]')) {
       const durum = el.querySelector('#kuran-durum');

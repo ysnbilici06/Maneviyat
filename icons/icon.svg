@@ -1,14 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="z" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#10241b"/><stop offset="1" stop-color="#050d0a"/>
-    </linearGradient>
+    <radialGradient id="gece" cx="78%" cy="8%" r="110%"><stop offset="0" stop-color="#25395e"/><stop offset=".38" stop-color="#132238"/><stop offset=".72" stop-color="#0c1a16"/><stop offset="1" stop-color="#06100c"/></radialGradient>
+    <linearGradient id="on" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1d1d20"/><stop offset="1" stop-color="#0b0b0c"/></linearGradient>
+    <linearGradient id="yan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#121214"/><stop offset="1" stop-color="#050506"/></linearGradient>
+    <linearGradient id="altin" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8893a"/><stop offset=".5" stop-color="#f1d28c"/><stop offset="1" stop-color="#c99a45"/></linearGradient>
+    <linearGradient id="altinKoyu" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#a4782f"/><stop offset="1" stop-color="#6e5020"/></linearGradient>
+    <radialGradient id="zeminIsik"><stop offset="0" stop-color="#e3bf76" stop-opacity=".45"/><stop offset="1" stop-color="#e3bf76" stop-opacity="0"/></radialGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#z)"/>
-  <g transform="translate(256 256)" fill="none" stroke="#e3bf76" stroke-width="16" stroke-linejoin="round">
-    <rect x="-118" y="-118" width="236" height="236" rx="10"/>
-    <rect x="-118" y="-118" width="236" height="236" rx="10" transform="rotate(45)"/>
+  <rect width="512" height="512" rx="112" fill="url(#gece)"/>
+  <g fill="#f2ede1"><circle cx="86" cy="92" r="3"/><circle cx="420" cy="70" r="2.4"/><circle cx="160" cy="58" r="2"/><circle cx="452" cy="150" r="2.2"/><circle cx="64" cy="170" r="1.8"/></g>
+  <circle cx="356" cy="104" r="3.6" fill="#e3bf76"/>
+  <g transform="translate(256 262) scale(1.0) translate(-256 -262)">
+    <ellipse cx="262" cy="418" rx="170" ry="26" fill="url(#zeminIsik)"/>
+    <polygon points="140,214 300,246 392,206 236,180" fill="#2b2b2e"/>
+    <polygon points="140,214 300,246 300,420 140,384" fill="url(#on)"/>
+    <polygon points="300,246 392,206 392,374 300,420" fill="url(#yan)"/>
+    <polygon points="140,252 300,284 300,306 140,274" fill="url(#altin)"/>
+    <polygon points="300,284 392,244 392,266 300,306" fill="url(#altinKoyu)"/>
+    <polygon points="140,260 300,292 300,294 140,262" fill="#7a5a1e" opacity=".55"/>
+    <polygon points="226,326 270,335 270,400 226,391" fill="url(#altin)"/>
+    <polygon points="232,334 264,340 264,394 232,388" fill="none" stroke="#7a5a1e" stroke-width="2" opacity=".7"/>
+    <polyline points="140,214 300,246 392,206" fill="none" stroke="#e3bf76" stroke-opacity=".35" stroke-width="2"/>
+    <line x1="300" y1="246" x2="300" y2="420" stroke="#e3bf76" stroke-opacity=".25" stroke-width="2"/>
   </g>
-  <circle cx="256" cy="256" r="62" fill="none" stroke="#e3bf76" stroke-width="10" opacity=".55"/>
-  <circle cx="256" cy="256" r="30" fill="#f6dfa6"/>
 </svg>

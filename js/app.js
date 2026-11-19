@@ -3,8 +3,9 @@ import { get, dinle } from './store.js';
 import { $, $$ } from './ui.js';
 import { ikon } from './ikon.js';
 import { bildirimleriPlanla } from './bildirim.js';
+import { introGoster } from './intro.js';
 
-export const UYGULAMA_ADI = 'Maneviyat';
+export const UYGULAMA_ADI = 'Maneviyat Rehberim';
 
 // [desen, modül, fonksiyon]
 const ROTALAR = [
@@ -37,6 +38,7 @@ const ROTALAR = [
   ['gunluk/yaz/:id', 'gunluk', 'yaz'],
   ['ayarlar', 'ayarlar'],
   ['daha', 'daha'],
+  ['begeniler', 'begeniler'],
   ['tasarim', 'tasarim'],
 ];
 
@@ -148,6 +150,7 @@ temaUygula();
 dinle(temaUygula);
 matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', temaUygula);
 yonlendir();
+introGoster();
 bildirimleriPlanla();
 document.addEventListener('visibilitychange', () => { if (!document.hidden) bildirimleriPlanla(); });
 

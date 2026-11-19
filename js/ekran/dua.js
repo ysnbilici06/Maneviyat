@@ -1,6 +1,7 @@
 // S14-S16 Dualarım (şimdilik yerel; topluluk ikinci aşamada), S24 Dua kütüphanesi
 import { get, guncelle, yeniId } from '../store.js';
-import { ustBaslik, esc, tost, onayla, paylas, ayetBlok, bos, titret } from '../ui.js';
+import { ustBaslik, esc, tost, onayla, ayetBlok, bos, titret } from '../ui.js';
+import { paylasPenceresi, eylemDugmeleri, eylemleriBagla } from '../paylas.js';
 import { ikon } from '../ikon.js';
 import { DUALAR, DUA_KATEGORILERI } from '../../data/icerik/dualar.js';
 import { duaMetni } from '../gunun-icerigi.js';
@@ -36,7 +37,7 @@ export default function dualarim({ el }) {
       guncelle(st => { const d = st.dualarim.find(x => x.id === id); if (!d) return; if (st.amin[id]) { delete st.amin[id]; d.amin = Math.max(0, (d.amin || 0) - 1); } else { st.amin[id] = 1; d.amin = (d.amin || 0) + 1; } });
       titret(15); dualarim({ el: yenile(el) });
     } else if (p) {
-      const d = get('dualarim').find(x => x.id === p.dataset.paylas); if (d) paylas(d.metin, 'Bir dua');
+      const d = get('dualarim').find(x => x.id === p.dataset.paylas); if (d) paylasPenceresi({ tur: 'dua', etiket: 'Bir dua', baslik: 'Kalbimden bir dua', tr: d.metin, id: 'duam:' + d.id, href: '#/dua' });
     } else if (s) {
       if (await onayla('Bu dua silinsin mi?', { evet: 'Sil', tehlike: true })) {
         guncelle(st => { st.dualarim = st.dualarim.filter(x => x.id !== s.dataset.sil); delete st.amin[s.dataset.sil]; });
@@ -96,11 +97,8 @@ export async function oku({ el, p }) {
   if (d.bag) d = { ...DUALAR.find(x => x.id === d.bag), ad: d.ad };
   ustBaslik({ baslik: d.ad, geri: `#/dua/kutuphane/${d.kat}` });
   const m = await duaMetni(d);
+  const icerik = { tur: 'dua', baslik: d.ad, ar: m.ar, tr: m.tr, kaynak: m.etiket, id: 'dua:' + p.id, href: `#/dua/oku/${p.id}` };
   el.innerHTML = `<div class="kart">${d.tekrar ? `<span class="rozet vurgu">${d.tekrar} kez okunur</span>` : ''}${ayetBlok(m)}${m.etiket ? `<p class="kaynak">${esc(m.etiket)}</p>` : ''}</div>
-    <div class="btn-sira"><button class="btn ikincil" data-paylas>${ikon('paylas', 20)} Paylaş</button><button class="btn ikincil" data-kopya>${ikon('kopyala', 20)} Kopyala</button></div>`;
-  const metin = `${d.ad}\n\n${m.ok}\n\n${m.tr}${m.etiket ? '\n— ' + m.etiket : ''}`;
-  el.addEventListener('click', async e => {
-    if (e.target.closest('[data-paylas]')) paylas(metin);
-    if (e.target.closest('[data-kopya]')) { try { await navigator.clipboard.writeText(metin); tost('Kopyalandı'); } catch { tost('Kopyalanamadı'); } }
-  });
+    <div class="btn-sira" style="align-items:center"><span class="ayet-eylem">${eylemDugmeleri('d', icerik)}</span><button class="btn" data-paylas="d">${ikon('paylas', 20)} Paylaş</button></div>`;
+  eylemleriBagla(el, { d: icerik });
 }

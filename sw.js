@@ -1,6 +1,7 @@
 // Servis çalışanı: uygulama kabuğu önceden önbelleğe alınır, gerisi okundukça (önce önbellek).
 // Sürümü her yayında artır.
-const SURUM = 'maneviyat-856cdd715a';
+const SURUM = 'maneviyat-9deaf7fc74';
+const KURAN_ONBELLEK = 'maneviyat-kuran';   // sûreler: sürüm değişse de silinmez
 const KABUK = [
   './', 'index.html', 'style.css', 'manifest.json',
   'fonts/amiri-quran.woff2', 'fonts/cormorant-latin-600.woff2', 'fonts/cormorant-latin-ext-600.woff2', 'fonts/cormorant-latin-700.woff2', 'fonts/cormorant-latin-ext-700.woff2', 'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png',
@@ -20,7 +21,7 @@ self.addEventListener('install', e => {
 });
 
 self.addEventListener('activate', e => {
-  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== SURUM).map(k => caches.delete(k)))).then(() => self.clients.claim()));
+  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== SURUM && k !== KURAN_ONBELLEK).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
 
 self.addEventListener('fetch', e => {
@@ -32,7 +33,8 @@ self.addEventListener('fetch', e => {
         if (r && r.ok) { const kopya = r.clone(); caches.open(SURUM).then(c => c.put(e.request, kopya)); }
         return r;
       });
-      return hit || ag.catch(() => caches.match('index.html'));
+      // Yedek olarak ana sayfa yalnızca sayfa açılışlarında; veri dosyalarında gerçek hata dönsün
+      return hit || ag.catch(() => e.request.mode === 'navigate' ? caches.match('index.html') : Response.error());
     })
   );
 });

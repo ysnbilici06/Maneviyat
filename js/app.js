@@ -155,3 +155,16 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
   addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(e => console.warn('SW', e)));
 }
 if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
+
+// İnternetsiz kullanım için Kur'an'ın tamamını bir kez, arka planda, sessizce indir (~3,5 MB)
+async function kuraniArkaplandaIndir() {
+  try {
+    if (localStorage.getItem('maneviyat.kuranTam') === '1') return;
+    if (!navigator.onLine || (navigator.connection && navigator.connection.saveData)) return;
+    if (!('caches' in window)) return;
+    const { tumunuIndir } = await import('./kuran-veri.js');
+    await tumunuIndir(null, 120);   // telefonu yormadan, yavaş yavaş
+    localStorage.setItem('maneviyat.kuranTam', '1');
+  } catch { /* bir sonraki açılışta tekrar dener */ }
+}
+addEventListener('load', () => setTimeout(kuraniArkaplandaIndir, 4000));

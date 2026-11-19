@@ -10,10 +10,12 @@ export async function sureler() {
 export async function sure(no) {
   no = Number(no);
   if (!sureOnbellek.has(no)) {
-    const p = fetch(`data/kuran/${String(no).padStart(3, '0')}.json`).then(r => {
-      if (!r.ok) throw new Error('Sure yüklenemedi');
-      return r.json();
-    });
+    const p = fetch(`data/kuran/${String(no).padStart(3, '0')}.json`)
+      .catch(() => { throw new Error('Bu sûre henüz cihaza indirilmedi. İnternete bağlanınca açılır.'); })
+      .then(r => {
+        if (!r.ok) throw new Error('Sûre yüklenemedi.');
+        return r.json();
+      });
     sureOnbellek.set(no, p);
     p.catch(() => sureOnbellek.delete(no));
   }
@@ -37,9 +39,16 @@ export async function refEtiket(ref) {
 }
 
 /** Tüm sureleri önbelleğe almak için (Ayarlar → çevrimdışı indir) */
-export async function tumunuIndir(ilerleme) {
+export const KURAN_ONBELLEK = 'maneviyat-kuran';   // sw.js ile aynı ad
+export async function tumunuIndir(ilerleme, bekle = 0) {
+  if (!('caches' in window)) { for (let i = 1; i <= 114; i++) { await sure(i); ilerleme && ilerleme(i); } return; }
+  const c = await caches.open(KURAN_ONBELLEK);
   for (let i = 1; i <= 114; i++) {
-    await sure(i);
+    const url = `data/kuran/${String(i).padStart(3, '0')}.json`;
+    if (!(await c.match(url))) {
+      await c.add(url);
+      if (bekle) await new Promise(r => setTimeout(r, bekle));
+    }
     ilerleme && ilerleme(i);
   }
 }

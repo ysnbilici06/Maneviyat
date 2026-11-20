@@ -8,7 +8,7 @@ import { INTRO_AYETLER, INTRO_HADISLER, INTRO_DUALAR } from '../data/icerik/intr
 import { HADISLER } from '../data/icerik/hadisler.js';
 import { DUALAR } from '../data/icerik/dualar.js';
 import { duaMetni } from './gunun-icerigi.js';
-import { paylasPenceresi, IMZA } from './paylas.js';
+import { paylasPenceresi } from './paylas.js';
 
 const SURE_MS = 5000;
 const TURLER = ['ayet', 'hadis', 'dua'];
@@ -54,7 +54,6 @@ export async function introGoster() {
     <div class="intro-ust"><img src="icons/icon.svg" alt="" width="40" height="40"><span>Maneviyat Rehberim</span></div>
     <div class="intro-govde"><p class="intro-yuk">${ikon('yildiz', 28)}</p></div>
     <div class="intro-alt">
-      <p class="intro-imza">${IMZA}</p>
       <div class="intro-cubuk"><i></i></div>
       <div class="intro-dugmeler">
         <button class="btn hayalet" data-intro="paylas" hidden>${ikon('paylas', 20)} Paylaş</button>

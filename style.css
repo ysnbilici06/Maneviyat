@@ -115,7 +115,7 @@ body.oynatici-acik .govde { padding-bottom: calc(var(--menu-h) + var(--alt-boslu
 @media (min-width: 768px) {
   :root { --max: 820px; --gutter: 28px; }
   .menu {
-    top: 0; right: auto; width: 92px; height: 100dvh; flex-direction: column; justify-content: flex-start;
+    top: 0; right: auto; width: 92px; height: 100vh; height: 100dvh; flex-direction: column; justify-content: flex-start;
     gap: var(--s2); padding: calc(env(safe-area-inset-top, 0px) + 24px) 0 24px; border-top: 0; border-right: 1px solid var(--border);
   }
   .sekme { flex: none; height: 64px; font-size: 12px; }
@@ -207,8 +207,8 @@ textarea.girdi { min-height: 140px; resize: vertical; line-height: 1.55; }
 .arama .girdi { padding-left: 44px; border-radius: var(--r-pill); }
 
 .anahtar { position: relative; width: 52px; height: 32px; flex: none; }
-.anahtar input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
-.anahtar span { position: absolute; inset: 0; border-radius: 99px; background: var(--surface-2); border: 1px solid var(--border-input); transition: background var(--t-fast); }
+.anahtar input { position: absolute; top: 0; right: 0; bottom: 0; left: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+.anahtar span { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border-radius: 99px; background: var(--surface-2); border: 1px solid var(--border-input); transition: background var(--t-fast); }
 .anahtar span::after { content: ''; position: absolute; width: 24px; height: 24px; left: 3px; top: 3px; border-radius: 50%; background: var(--surface); box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform var(--t-base) var(--ease); }
 .anahtar input:checked + span { background: var(--accent); border-color: var(--accent); }
 .anahtar input:checked + span::after { transform: translateX(20px); }
@@ -237,13 +237,13 @@ textarea.girdi { min-height: 140px; resize: vertical; line-height: 1.55; }
 .tost.gorunur { opacity: 1; transform: translate(-50%, 0); }
 
 dialog.pencere {
-  border: 0; padding: 0; margin: auto auto 0; width: 100%; max-width: 560px; max-height: 88dvh;
+  border: 0; padding: 0; margin: auto auto 0; width: 100%; max-width: 560px; max-height: 88vh; max-height: 88dvh;
   background: var(--surface); color: var(--text); border-radius: var(--r-lg) var(--r-lg) 0 0; box-shadow: var(--shadow-pop);
 }
 dialog.pencere[open] { animation: yukari var(--t-base) var(--ease); }
 dialog.pencere::backdrop { background: rgba(0,0,0,.45); }
 @media (min-width: 768px) { dialog.pencere { margin: auto; border-radius: var(--r-lg); } }
-.pencere-ic { padding: var(--s4) var(--s4) calc(var(--s4) + var(--alt-bosluk)); overflow: auto; max-height: 88dvh; }
+.pencere-ic { padding: var(--s4) var(--s4) calc(var(--s4) + var(--alt-bosluk)); overflow: auto; max-height: 88vh; max-height: 88dvh; }
 .pencere-ust { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--s3); }
 .pencere-ust h2 { font-size: var(--fs-lg); }
 .onay-metin { font-size: 17px; padding: 8px 4px 0; }
@@ -322,7 +322,7 @@ dialog.pencere::backdrop { background: rgba(0,0,0,.45); }
 
 /* Kıble */
 .pusula { position: relative; width: min(78vw, 320px); aspect-ratio: 1; margin: var(--s5) auto; }
-.pusula-kadran { position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--border); background: var(--surface); box-shadow: var(--shadow-card); transition: transform 80ms linear; }
+.pusula-kadran { position: absolute; top: 0; right: 0; bottom: 0; left: 0; border-radius: 50%; border: 2px solid var(--border); background: var(--surface); box-shadow: var(--shadow-card); transition: transform 80ms linear; }
 .pusula-kadran .yon { position: absolute; font-weight: 700; font-size: 14px; color: var(--text-muted); }
 .pusula-kadran .k-isaret { position: absolute; left: 50%; top: 8px; width: 34px; height: 34px; margin-left: -17px; border-radius: 8px; background: var(--gold); transform-origin: 17px calc(min(78vw, 320px) / 2 - 8px); display: grid; place-items: center; color: #fff; }
 .pusula-ok { position: absolute; left: 50%; top: 14%; bottom: 50%; width: 4px; margin-left: -2px; background: var(--accent); border-radius: 4px; }
@@ -348,7 +348,7 @@ dialog.pencere::backdrop { background: rgba(0,0,0,.45); }
   touch-action: manipulation; user-select: none; -webkit-user-select: none; transition: transform 80ms;
 }
 .zikir-dugme:active { transform: scale(.97); }
-.zikir-dugme svg.halka { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.zikir-dugme svg.halka { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
 .zikir-dugme .sayi { font-size: 72px; font-weight: 750; font-variant-numeric: tabular-nums; line-height: 1; }
 .zikir-dugme .hedef { font-size: 15px; opacity: .8; margin-top: 4px; }
 .zikir-dugme.tamam { background: linear-gradient(140deg, #1d6f45, #155535); }
@@ -389,8 +389,8 @@ dialog.pencere::backdrop { background: rgba(0,0,0,.45); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 
 /* <dialog> desteklemeyen eski tarayıcılar */
-dialog.yedek-pencere { position: fixed; inset: auto 0 0 0; z-index: 70; display: block; }
-dialog.yedek-pencere::before { content: ''; position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: -1; }
+dialog.yedek-pencere { position: fixed; top: auto; right: 0; bottom: 0; left: 0; z-index: 70; display: block; }
+dialog.yedek-pencere::before { content: ''; position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba(0,0,0,.45); z-index: -1; }
 
 /* Metin içindeki simgeler satır içinde dursun */
 p > svg.ikon, span > svg.ikon, b > svg.ikon,
@@ -488,7 +488,7 @@ body[data-ekran="bugun"] .ust h1 { font-size: clamp(24px, 7vw, 34px); }
 
 /* ========== Açılış ekranı (intro) ========== */
 .intro {
-  position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; color: #fff;
+  position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; display: flex; flex-direction: column; color: #fff;
   background: radial-gradient(130% 80% at 85% 0%, #22365a 0%, #122036 32%, #0c1a16 68%, #07120e 100%);
   padding: calc(env(safe-area-inset-top, 0px) + 22px) 24px calc(env(safe-area-inset-bottom, 0px) + 22px);
   opacity: 0; transition: opacity 350ms var(--ease);
@@ -496,7 +496,7 @@ body[data-ekran="bugun"] .ust h1 { font-size: clamp(24px, 7vw, 34px); }
 .intro.gorunur { opacity: 1; }
 .intro.kapaniyor { opacity: 0; }
 body.intro-acik { overflow: hidden; }
-.intro-yildizlar { position: absolute; inset: 0; pointer-events: none; opacity: .8;
+.intro-yildizlar { position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none; opacity: .8;
   background-image:
     radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent 51%),
     radial-gradient(1.8px 1.8px at 72% 14%, #e3bf76 50%, transparent 51%), radial-gradient(1px 1px at 88% 30%, #fff 50%, transparent 51%),
@@ -543,6 +543,3 @@ body.intro-acik { overflow: hidden; }
 .paylas-btn:active { transform: scale(.97); }
 .ikon-btn.secili .ikon { fill: currentColor; }
 
-/* Uygulama içi imza (paylaşılanlarda yok) */
-.imza-not { font-family: var(--font-serif); font-style: italic; font-weight: 600; font-size: 17px; color: var(--gold); text-align: center; margin-top: 10px; }
-.intro-imza { font-family: var(--font-serif); font-style: italic; font-weight: 600; font-size: 16px; color: rgba(246,227,180,.8); text-align: center; }

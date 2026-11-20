@@ -3,7 +3,7 @@ import { get, set, guncelle } from '../store.js';
 import { ustBaslik, esc, tost } from '../ui.js';
 import { ikon } from '../ikon.js';
 import { ILLER, enYakinIl } from '../iller.js';
-import { izinIste, bildirimDestegi, bildirimleriPlanla } from '../bildirim.js';
+import { izinIste, bildirimDestegi, bildirimleriPlanla, izinYardimi } from '../bildirim.js';
 
 export function konumAl() {
   return new Promise((coz, red) => {
@@ -75,7 +75,7 @@ export default function karsilama({ el }) {
     } else if (t.hasAttribute('data-bildirim')) {
       const s = await izinIste();
       if (s === 'granted') { guncelle(x => { x.ayarlar.bildirim.acik = true; }); bildirimleriPlanla(); tost('Hatırlatmalar açıldı'); }
-      else tost('İzin verilmedi. Ayarlar\'dan tekrar deneyebilirsin.');
+      else tost(s === 'yok' ? 'Bu tarayıcı bildirim desteklemiyor.' : 'İzin verilmedi. ' + izinYardimi());
       bitir();
     } else if (t.hasAttribute('data-bitir')) bitir();
   });

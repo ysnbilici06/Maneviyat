@@ -6,8 +6,6 @@ import { ikon } from './ikon.js';
 
 export const SITE = 'https://ysnbilici06.github.io/Maneviyat/';
 export const UYGULAMA_ADI = 'Maneviyat Rehberim';
-// Yalnızca uygulama içinde görünür; paylaşılan görsel ve metinlere EKLENMEZ
-export const IMZA = 'Yasin BİLİCİ Size Dua Eder Dua İster';
 const TUR_ADI = { ayet: "Kur'an-ı Kerîm", hadis: 'Hadis-i şerif', dua: 'Dua', kissa: 'Kıssadan hisse', zikir: 'Zikir' };
 
 export const icerikId = c => c.id || `${c.tur}:${(c.kaynak || '') + (c.tr || '').slice(0, 40)}`;
@@ -163,7 +161,6 @@ export async function paylasPenceresi(c) {
   const metin = paylasimMetni(c);
   const { el, kapat } = pencere(`
     <div class="paylas-onizleme"><img alt="Paylaşım görseli önizlemesi" id="pg-img"><span class="soluk kucuk" id="pg-yuk">Görsel hazırlanıyor…</span></div>
-    <p class="imza-not">${IMZA}</p>
     <div class="bolumlu" role="group" aria-label="Görsel biçimi" style="margin:12px 0">
       <button aria-pressed="true" data-bicim="hikaye">Hikâye (dikey)</button><button aria-pressed="false" data-bicim="kare">Kare</button></div>
     <div class="paylas-izgara">

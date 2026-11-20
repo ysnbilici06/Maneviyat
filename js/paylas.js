@@ -83,13 +83,13 @@ export async function gorselUret(c, format = 'hikaye') {
 
   // Gece zemini
   const g = ctx.createRadialGradient(W * 0.85, H * 0.08, 40, W * 0.6, H * 0.4, H);
-  g.addColorStop(0, '#22365a'); g.addColorStop(0.35, '#122036'); g.addColorStop(0.7, '#0c1a16'); g.addColorStop(1, '#07120e');
+  g.addColorStop(0, '#24453a'); g.addColorStop(0.35, '#18302a'); g.addColorStop(0.7, '#11211c'); g.addColorStop(1, '#0c1513');
   ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
   // Yıldızlar (sabit konumlar)
   let tohum = 7;
   const rnd = () => (tohum = (tohum * 9301 + 49297) % 233280) / 233280;
   for (let i = 0; i < 90; i++) {
-    ctx.globalAlpha = 0.25 + rnd() * 0.6; ctx.fillStyle = rnd() > 0.85 ? '#e3bf76' : '#f2ede1';
+    ctx.globalAlpha = 0.25 + rnd() * 0.6; ctx.fillStyle = rnd() > 0.85 ? '#d4b876' : '#f2ede1';
     ctx.beginPath(); ctx.arc(rnd() * W, rnd() * H * 0.9, rnd() * 2.2 + 0.4, 0, Math.PI * 2); ctx.fill();
   }
   ctx.globalAlpha = 1;
@@ -103,7 +103,7 @@ export async function gorselUret(c, format = 'hikaye') {
   ctx.textAlign = 'center'; ctx.textBaseline = 'alphabetic';
 
   // Tür etiketi
-  ctx.fillStyle = '#e3bf76'; ctx.font = '600 30px system-ui, -apple-system, "Segoe UI", sans-serif';
+  ctx.fillStyle = '#d4b876'; ctx.font = '600 30px system-ui, -apple-system, "Segoe UI", sans-serif';
   const etiket = (c.etiket || TUR_ADI[c.tur] || '').toLocaleUpperCase('tr');
   if ('letterSpacing' in ctx) ctx.letterSpacing = '6px';
   ctx.fillText(etiket, W / 2, y);
@@ -126,7 +126,7 @@ export async function gorselUret(c, format = 'hikaye') {
   const toplam = (B ? B.yukseklik + 30 : 0) + (A ? A.yukseklik + 50 : 0) + T.yukseklik + (c.kaynak ? 70 : 0);
   y = alanY + Math.max(0, (alanH - toplam) / 2);
   if (B) {
-    ctx.fillStyle = '#f6e3b4'; ctx.font = `700 ${B.boyut}px "Cormorant Garamond", Georgia, serif`;
+    ctx.fillStyle = '#ecdcb4'; ctx.font = `700 ${B.boyut}px "Cormorant Garamond", Georgia, serif`;
     B.satirlar.forEach((s, i) => ctx.fillText(s, W / 2, y + B.boyut + i * B.boyut * 1.15));
     y += B.yukseklik + 30;
   }
@@ -140,7 +140,7 @@ export async function gorselUret(c, format = 'hikaye') {
   T.satirlar.forEach((s, i) => ctx.fillText(s, W / 2, y + T.boyut + i * T.boyut * 1.3));
   y += T.yukseklik;
   if (c.kaynak) {
-    ctx.fillStyle = '#e3bf76'; ctx.font = '500 30px system-ui, -apple-system, "Segoe UI", sans-serif';
+    ctx.fillStyle = '#d4b876'; ctx.font = '500 30px system-ui, -apple-system, "Segoe UI", sans-serif';
     ctx.fillText(c.kaynak.length > 60 ? c.kaynak.slice(0, 58) + '…' : c.kaynak, W / 2, y + 60);
   }
   // Alt imza: yıldız + uygulama adı birlikte ortalı
@@ -148,7 +148,7 @@ export async function gorselUret(c, format = 'hikaye') {
   ctx.font = '700 48px "Cormorant Garamond", Georgia, serif';
   const adG = ctx.measureText(UYGULAMA_ADI).width;
   const x0 = W / 2 - (adG + 46) / 2;
-  yildiz(ctx, x0 + 14, ay - 14, 13, '#e3bf76', 2.5);
+  yildiz(ctx, x0 + 14, ay - 14, 13, '#d4b876', 2.5);
   ctx.fillStyle = '#f2ede1'; ctx.textAlign = 'left';
   ctx.fillText(UYGULAMA_ADI, x0 + 46, ay);
   ctx.textAlign = 'center';

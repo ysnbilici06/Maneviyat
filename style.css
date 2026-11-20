@@ -28,25 +28,25 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #07120e; --surface: #0e1e17; --surface-2: #15291f; --border: #20382b; --border-input: #6a8576;
-    --text: #f2ede1; --text-muted: #a5afa8; --accent: #d9b46c; --on-accent: #1b1407;
-    --accent-soft: #2b2616; --on-accent-soft: #efd7a2; --gold: #e3bf76; --danger: #ff8f86;
-    --success: #62c79f; --warning: #f1bc5a; --arabic: #f6efdc;
-    --kahraman: radial-gradient(120% 90% at 85% 10%, #1b2c4a 0%, #101d2e 35%, #0c1a16 75%, #0a1612 100%);
-    --bg-cam: rgba(7,18,14,.9); --basari-55: #3f8a6c; --basari-25: #1f3b2f; --basari-halka: rgba(98,199,159,.25);
-    --altin-cizgi: linear-gradient(90deg, #a07a35, #e9c77f);
+    --bg: #0c1513; --surface: #13201b; --surface-2: #1a2a24; --border: #263a32; --border-input: #6c8279;
+    --text: #eef0ec; --text-muted: #a4aea9; --accent: #c9a961; --on-accent: #17130a;
+    --accent-soft: #262315; --on-accent-soft: #e6d3a3; --gold: #d4b876; --danger: #ff8f86;
+    --success: #5fbf9a; --warning: #f1bc5a; --arabic: #f6efdc;
+    --kahraman: linear-gradient(145deg, #1a352d 0%, #142a23 55%, #0f1d19 100%);
+    --bg-cam: rgba(12,21,19,.92); --basari-55: #3f8a6c; --basari-25: #1f3b2f; --basari-halka: rgba(98,199,159,.25);
+    --altin-cizgi: linear-gradient(90deg, #9c8248, #d8bf86);
     --shadow-card: 0 1px 0 rgba(255,255,255,.03) inset, 0 2px 10px rgba(0,0,0,.35); --shadow-pop: 0 12px 32px rgba(0,0,0,.55);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #07120e; --surface: #0e1e17; --surface-2: #15291f; --border: #20382b; --border-input: #6a8576;
-  --text: #f2ede1; --text-muted: #a5afa8; --accent: #d9b46c; --on-accent: #1b1407;
-  --accent-soft: #2b2616; --on-accent-soft: #efd7a2; --gold: #e3bf76; --danger: #ff8f86;
-  --success: #62c79f; --warning: #f1bc5a; --arabic: #f6efdc;
-  --kahraman: radial-gradient(120% 90% at 85% 10%, #1b2c4a 0%, #101d2e 35%, #0c1a16 75%, #0a1612 100%);
-  --bg-cam: rgba(7,18,14,.9); --basari-55: #3f8a6c; --basari-25: #1f3b2f; --basari-halka: rgba(98,199,159,.25);
-  --altin-cizgi: linear-gradient(90deg, #a07a35, #e9c77f);
+  --bg: #0c1513; --surface: #13201b; --surface-2: #1a2a24; --border: #263a32; --border-input: #6c8279;
+  --text: #eef0ec; --text-muted: #a4aea9; --accent: #c9a961; --on-accent: #17130a;
+  --accent-soft: #262315; --on-accent-soft: #e6d3a3; --gold: #d4b876; --danger: #ff8f86;
+  --success: #5fbf9a; --warning: #f1bc5a; --arabic: #f6efdc;
+  --kahraman: linear-gradient(145deg, #1a352d 0%, #142a23 55%, #0f1d19 100%);
+  --bg-cam: rgba(12,21,19,.92); --basari-55: #3f8a6c; --basari-25: #1f3b2f; --basari-halka: rgba(98,199,159,.25);
+  --altin-cizgi: linear-gradient(90deg, #9c8248, #d8bf86);
   --shadow-card: 0 1px 0 rgba(255,255,255,.03) inset, 0 2px 10px rgba(0,0,0,.35); --shadow-pop: 0 12px 32px rgba(0,0,0,.55);
   color-scheme: dark;
 }
@@ -432,7 +432,7 @@ a.kart.kart-yumusak, button.kart.kart-yumusak { color: var(--on-accent-soft); }
 /* ========== Bugün: tarih ve vakit kartı ========== */
 .gun-kart { position: relative; overflow: hidden; padding: 20px 18px 16px; border: 1px solid rgba(227,191,118,.18); }
 .gun-sus { position: absolute; right: 6px; top: 8px; width: 132px; height: 150px; pointer-events: none; }
-.gk-etiket { font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: #f6e3b4; position: relative; }
+.gk-etiket { font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: #ecdcb4; position: relative; }
 .gk-kalan { font-size: 14px; color: rgba(255,255,255,.78); margin-top: 2px; position: relative; }
 .gk-tarih { display: flex; align-items: flex-end; gap: 10px; margin-top: 14px; position: relative; }
 .gk-tarih b { font-family: var(--font-serif); font-size: 64px; line-height: .9; font-weight: 700; color: #fff; }
@@ -489,7 +489,7 @@ body[data-ekran="bugun"] .ust h1 { font-size: clamp(24px, 7vw, 34px); }
 /* ========== Açılış ekranı (intro) ========== */
 .intro {
   position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 100; display: flex; flex-direction: column; color: #fff;
-  background: radial-gradient(130% 80% at 85% 0%, #22365a 0%, #122036 32%, #0c1a16 68%, #07120e 100%);
+  background: radial-gradient(130% 80% at 85% 0%, #24453a 0%, #18302a 35%, #11211c 68%, #0c1513 100%);
   padding: calc(env(safe-area-inset-top, 0px) + 22px) 24px calc(env(safe-area-inset-bottom, 0px) + 22px);
   opacity: 0; transition: opacity 350ms var(--ease);
 }
@@ -499,23 +499,23 @@ body.intro-acik { overflow: hidden; }
 .intro-yildizlar { position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none; opacity: .8;
   background-image:
     radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 28% 8%, #fff 50%, transparent 51%),
-    radial-gradient(1.8px 1.8px at 72% 14%, #e3bf76 50%, transparent 51%), radial-gradient(1px 1px at 88% 30%, #fff 50%, transparent 51%),
+    radial-gradient(1.8px 1.8px at 72% 14%, #d4b876 50%, transparent 51%), radial-gradient(1px 1px at 88% 30%, #fff 50%, transparent 51%),
     radial-gradient(1.2px 1.2px at 46% 24%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 8% 44%, #fff 50%, transparent 51%),
-    radial-gradient(1.6px 1.6px at 92% 52%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 20% 70%, #e3bf76 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 92% 52%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 20% 70%, #d4b876 50%, transparent 51%),
     radial-gradient(1.3px 1.3px at 64% 82%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 36% 90%, #fff 50%, transparent 51%),
     radial-gradient(1.4px 1.4px at 80% 92%, #fff 50%, transparent 51%), radial-gradient(1px 1px at 54% 6%, #fff 50%, transparent 51%);
   animation: parilti 4s ease-in-out infinite alternate; }
 @keyframes parilti { from { opacity: .45; } to { opacity: .9; } }
-.intro-ust { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: #f6e3b4; }
+.intro-ust { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; font-family: var(--font-serif); font-size: 26px; font-weight: 700; color: #ecdcb4; }
 .intro-ust img { border-radius: 10px; }
 .intro-govde { position: relative; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; gap: 14px; max-width: 600px; width: 100%; margin: 0 auto; }
 .intro-govde > * { opacity: 0; transform: translateY(10px); animation: introBelir 700ms var(--ease) forwards; }
 .intro-govde > :nth-child(2) { animation-delay: 120ms; } .intro-govde > :nth-child(3) { animation-delay: 260ms; }
 .intro-govde > :nth-child(4) { animation-delay: 420ms; } .intro-govde > :nth-child(5) { animation-delay: 560ms; }
 @keyframes introBelir { to { opacity: 1; transform: none; } }
-.intro-yuk { color: #e3bf76; animation: parilti 1s ease-in-out infinite alternate !important; opacity: 1 !important; }
-.intro-etiket { font-size: 13px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #e3bf76; }
-.intro-baslik { font-family: var(--font-serif); font-size: 30px; font-weight: 700; color: #f6e3b4; line-height: 1.15; }
+.intro-yuk { color: #d4b876; animation: parilti 1s ease-in-out infinite alternate !important; opacity: 1 !important; }
+.intro-etiket { font-size: 13px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; color: #d4b876; }
+.intro-baslik { font-family: var(--font-serif); font-size: 30px; font-weight: 700; color: #ecdcb4; line-height: 1.15; }
 .intro-arapca { font-family: var(--font-arabic); font-size: clamp(24px, 6.5vw, 34px); line-height: 1.9; color: #f6efdc; direction: rtl; }
 .intro-metin { font-family: var(--font-serif); font-weight: 600; font-size: clamp(22px, 5.6vw, 30px); line-height: 1.35; color: #fff; }
 .intro-kaynak { font-size: 14px; color: rgba(227,191,118,.9); }

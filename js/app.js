@@ -126,7 +126,7 @@ function temaUygula() {
   else delete document.documentElement.dataset.theme;
   const koyu = t === 'koyu' || (t !== 'acik' && matchMedia('(prefers-color-scheme: dark)').matches);
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.content = koyu ? '#07120e' : '#f6f2e9';
+  if (meta) meta.content = koyu ? '#0c1513' : '#f6f2e9';
   document.documentElement.style.setProperty('--yazi-carpan', String(get('ayarlar.okuma.yazi') || 1));
 }
 

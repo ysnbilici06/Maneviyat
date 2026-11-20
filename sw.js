@@ -1,6 +1,6 @@
 // Servis çalışanı: uygulama kabuğu önceden önbelleğe alınır, gerisi okundukça (önce önbellek).
 // Sürümü her yayında artır.
-const SURUM = 'maneviyat-5c8df297b3';
+const SURUM = 'maneviyat-bc115b45ab';
 const KURAN_ONBELLEK = 'maneviyat-kuran';   // sûreler: sürüm değişse de silinmez
 const KABUK = [
   './', 'index.html', 'style.css', 'manifest.json',
